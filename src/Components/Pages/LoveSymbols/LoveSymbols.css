@@ -1,0 +1,67 @@
+/* Container styling for the symbols */
+.love-symbols-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ffe4e1, #ffb6c1);
+    overflow: hidden;
+  }
+  
+  /* Love symbol styling */
+  .love-symbol {
+    font-size: 4rem; /* Adjust size as needed */
+    color: #ff69b4;
+    text-shadow: 0 0 20px rgba(255, 105, 180, 0.7); /* Glow effect */
+    position: absolute;
+    animation: loveGlow 3s ease-in-out infinite, smokeMove 2s linear infinite;
+    opacity: 0;
+  }
+  
+  /* Keyframe animation for glowing effect */
+  @keyframes loveGlow {
+    0% {
+      text-shadow: 0 0 20px rgba(255, 105, 180, 0.7), 0 0 30px rgba(255, 105, 180, 0.5);
+      opacity: 0.8;
+    }
+    50% {
+      text-shadow: 0 0 30px rgba(255, 105, 180, 0.8), 0 0 40px rgba(255, 105, 180, 0.6);
+      opacity: 1;
+    }
+    100% {
+      text-shadow: 0 0 20px rgba(255, 105, 180, 0.7), 0 0 30px rgba(255, 105, 180, 0.5);
+      opacity: 0.8;
+    }
+  }
+  
+  /* Keyframe animation for smoke effect (moving upwards) */
+  @keyframes smokeMove {
+    0% {
+      transform: translateY(100px); /* Start below */
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(-50px); /* Move upwards */
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateY(-150px); /* Move further upwards */
+      opacity: 1;
+    }
+  }
+  
+  /* Randomized positions and timing for each symbol */
+  .love-symbol:nth-child(odd) {
+    animation-delay: -2s;
+  }
+  
+  .love-symbol:nth-child(even) {
+    animation-delay: -1s;
+  }
+  
+  .love-symbol:nth-child(3) {
+    animation-delay: -3s;
+  }
+  

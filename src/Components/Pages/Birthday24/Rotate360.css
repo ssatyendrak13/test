@@ -1,0 +1,75 @@
+/* Overall container styling */
+.cylinder-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ffe4e1, #ffb6c1);
+  overflow: hidden;
+  perspective: 1000px; /* Maintain the 3D effect */
+  font-family: "Cursive", sans-serif;
+  width: 100%;
+  /* background-image: url("/public/assets/Birthday/Rotate360bg.jpg"); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; */
+}
+
+/* Cylinder container */
+.cylinder {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  transform-style: preserve-3d;
+  animation: rotateCylinder 10s infinite linear;
+  transform: rotateX(0deg) rotateY(0deg);
+}
+
+/* Individual images */
+.cylinder-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center center -120px;
+  transform: translate(-50%, -50%) rotateY(0deg) translateZ(250px);
+}
+
+.cylinder-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  border: 3px solid pink;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+/* Birthday message styling */
+.birthday-message {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.birthday-message h1 {
+  font-size: 2.5rem;
+  color: #ff69b4;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.birthday-message p {
+  font-size: 1.2rem;
+  color: #fff;
+  max-width: 600px;
+  line-height: 1.5;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation for cylinder rotation */
+@keyframes rotateCylinder {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}

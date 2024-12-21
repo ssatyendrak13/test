@@ -1,0 +1,37 @@
+.diwali-24 {
+    background-image:url('../../../Assets/diwali.jpg');
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000; 
+    overflow-x: hidden;
+  }
+  
+  .back-next-btn{
+    margin-bottom: 2rem;
+    width: 80vw;
+    /* position: relative;
+    top: 280px; */
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .oye-sonali{
+    margin-top: 2rem;
+    font-family: Cursive, sans-serif;
+    font-size: 5rem;
+    color: #8B4513; /* Brown color */
+    -webkit-text-stroke: 1px #f1ece9; /* Brown text border */
+    font-weight: bold; 
+    text-align: center;   
+  }
+
+  .none{
+    display: none;
+  }
+ 

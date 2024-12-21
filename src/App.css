@@ -1,0 +1,54 @@
+.App {
+  text-align: center;
+}
+:root {
+  --navbar-height : 6rem;
+}
+.app{
+  display: flex;
+  background-color: #f9f9f9;
+}
+.primary-btn{
+  font-size: 20px;
+  font-weight: 700;
+  background-color: white;
+  padding-inline: 12px;
+  padding-block: 4px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.primary-btn:active{
+  background-color: #ccc;
+}
+.flex{
+  display: flex;
+}
+.flex-col{
+  display: flex;
+  flex-direction: column;
+}
+.message-to-open{
+  display: none;
+  text-align: center;
+}
+.message-to-open h2,h3{
+  margin: 0;
+  padding: 0;
+}
+@media (max-width : 1024px) {
+  .hide-screen{
+    display: none;
+  }
+  .message-to-open{
+    display: flex
+;
+        height: 100vh;
+        background: pink;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        line-height: normal;
+  }
+}

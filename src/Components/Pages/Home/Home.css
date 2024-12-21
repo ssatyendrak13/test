@@ -1,0 +1,28 @@
+.home {
+  background-image: url('../../../Assets/couple.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-color: #000; /* Optional: Adds a background color */
+  width: 100vw;
+  /* flex-shrink: 0; */
+}
+.hi-icon{
+  height: 300px;
+  position: relative;
+  left: -50px;
+  top: -200px;
+}
+.sonali-icon{
+  position: relative;
+  left: -150px;
+  top: -200px;
+}
+.love-tree{
+  position: relative;
+  bottom: -20px
+}

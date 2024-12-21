@@ -1,0 +1,45 @@
+
+.sidebar {
+    width: 12rem;
+    height: 100vh;
+    background-color: pink; 
+    /* background: linear-gradient(90deg, rgba(231,11,82,1) 24%, rgba(9,79,224,1) 65%); */
+    padding-inline: 15px;
+    overflow-y: scroll;
+    /* position: fixed; */
+}
+
+.sidebar nav ul {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+}
+.sidebar nav img{
+    margin-top: 1rem;
+    height: 80px;
+    border-radius: 50% 50%;
+}
+.sidebar nav ul li {
+    margin: 10px 0;
+    font-size: 18px;
+    background-color: white;
+    padding : 5px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+.name-text{
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+.active{
+    color: pink;
+    font-weight: bold;
+}
