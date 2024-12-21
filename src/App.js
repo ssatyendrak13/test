@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <div className='hide-screen'>
-        <Router>
+        <Router basename="/test">
           <Navbar />
           <div className='app'>
             <Sidebar />
