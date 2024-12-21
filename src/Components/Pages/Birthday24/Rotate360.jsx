@@ -1,20 +1,32 @@
 import React from 'react';
 import './Rotate360.css';
+import first from "../../../Assets/Rotate360/1st.jpg";
+import second from "../../../Assets/Rotate360/2nd.jpg";
+import third from "../../../Assets/Rotate360/3rd.jpg";
+import fourth from "../../../Assets/Rotate360/4th.jpg";
+import fifth from "../../../Assets/Rotate360/5th.jpg";
+import sixth from "../../../Assets/Rotate360/6th.jpg";
+import seventh from "../../../Assets/Rotate360/7th.jpg";
+import eighth from "../../../Assets/Rotate360/8th.jpg";
+import ninth from "../../../Assets/Rotate360/9th.jpg";
+import tenth from "../../../Assets/Rotate360/10th.jpg";
+import eleventh from "../../../Assets/Rotate360/11th.jpg";
+import twelfth from "../../../Assets/Rotate360/12th.jpg";
 
 function Rotate360() {
   const images = [
-    '/assets/Birthday/1st.jpg',
-    '/assets/Birthday/2nd.jpg',
-    '/assets/Birthday/3rd.jpg',
-    '/assets/Birthday/4th.jpg',
-    '/assets/Birthday/5th.jpg',
-    '/assets/Birthday/6th.jpg',
-    '/assets/Birthday/7th.jpg',
-    '/assets/Birthday/8th.jpg',
-    '/assets/Birthday/9th.jpg',
-    '/assets/Birthday/10th.jpg',
-    '/assets/Birthday/11th.jpg',
-    '/assets/Birthday/12th.jpg',
+first,
+second,
+third,
+fourth,
+fifth,
+sixth,
+seventh,
+eighth,
+ninth,
+tenth,
+eleventh,
+twelfth,
   ];
 
   return (
