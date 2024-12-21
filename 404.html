@@ -13,11 +13,11 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+
+    <!-- Redirect to index.html on 404 -->
     <script>
-      // Fallback for handling 404 and routing
-      if (window.location.pathname !== "/") {
-        window.location.replace("/"); // Redirect to the homepage
-      }
+      // Always redirect to index.html so React Router can handle routing
+      window.location.replace(window.location.pathname + window.location.search + window.location.hash);
     </script>
   </body>
 </html>
