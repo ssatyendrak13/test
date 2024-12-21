@@ -16,8 +16,9 @@
 
     <!-- Redirect to index.html on 404 -->
     <script>
-      // Always redirect to index.html so React Router can handle routing
-      window.location.replace(window.location.pathname + window.location.search + window.location.hash);
-    </script>
+        if (window.location.pathname !== '/') {
+          window.location.replace(window.location.pathname + window.location.search + window.location.hash);
+        }
+      </script>
   </body>
 </html>
