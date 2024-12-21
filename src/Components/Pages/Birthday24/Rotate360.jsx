@@ -1,5 +1,5 @@
-import React from 'react';
-import './Rotate360.css';
+import React from "react";
+import "./Rotate360.css";
 import first from "../../../Assets/Rotate360/1st.jpg";
 import second from "../../../Assets/Rotate360/2nd.jpg";
 import third from "../../../Assets/Rotate360/3rd.jpg";
@@ -15,18 +15,18 @@ import twelfth from "../../../Assets/Rotate360/12th.jpg";
 
 function Rotate360() {
   const images = [
-first,
-second,
-third,
-fourth,
-fifth,
-sixth,
-seventh,
-eighth,
-ninth,
-tenth,
-eleventh,
-twelfth,
+    first,
+    second,
+    third,
+    fourth,
+    fifth,
+    sixth,
+    seventh,
+    eighth,
+    ninth,
+    tenth,
+    eleventh,
+    twelfth,
   ];
 
   return (
@@ -37,7 +37,9 @@ twelfth,
             key={index}
             className="cylinder-image"
             style={{
-              transform: `rotateY(${index * (360 / images.length)}deg) translateZ(250px)`,
+              transform: `rotateY(${
+                index * (360 / images.length)
+              }deg) translateZ(250px)`,
             }}
           >
             <img src={src} alt={`Image ${index + 1}`} />
@@ -46,9 +48,7 @@ twelfth,
       </div>
       <div className="birthday-message">
         <h1>Happy Birthday, My Love!</h1>
-        <p>
-          May your day be as bright and beautiful as your smile. 💖
-        </p>
+        <p>May your day be as bright and beautiful as your smile. 💖</p>
       </div>
     </div>
   );

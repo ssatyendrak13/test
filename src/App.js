@@ -15,7 +15,7 @@ function App() {
     <>
       <div className='hide-screen'>
         <Router 
-        // basename="/test"
+        basename="/test"
         >
           <Navbar />
           <div className='app'>
